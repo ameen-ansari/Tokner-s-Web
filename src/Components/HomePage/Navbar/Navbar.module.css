@@ -1,0 +1,130 @@
+.parent {
+  width: 100%;
+  display: flex;
+  padding: 2rem;
+}
+
+.navbarDiv1 {
+  flex: 1;
+  display: flex;
+  gap: 3rem;
+}
+.navbarDiv1 div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Century Gothic";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  gap: 2rem;
+  color: #ffffff;
+}
+
+.navbarDiv2 {
+  flex: 0.5;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (max-width: 950px) {
+  .navbarDiv2 > button:nth-child(2) {
+    display: none;
+  }
+  .navbarDiv2 {
+    flex: 0.2;
+  }
+}
+
+@media (max-width: 800px) {
+    .navbarDiv1 > div:nth-child(2) {
+        display: none;
+  }
+  
+  .navbarDiv1 {
+    flex: 1;
+  }
+
+  .navbarDiv2 {
+    gap: 2rem;
+    flex: 1;
+  }
+}
+.Union {
+    display: none;
+}
+
+@media (max-width: 500px) {
+    .navbarDiv2 {
+        display: none;
+    }
+    .Union {
+        display: block;
+    }
+}
+
+.navbarDiv2 > button {
+  font-family: "Century Gothic";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+  border: 1px solid #22a75d;
+  background-color: #0f1320;
+  color: #ffffff;
+  padding: 0.8rem 2rem;
+  border-radius: 52px;
+}
+
+/* Drop Down */
+.dropdown {
+  position: relative;
+  top: 0%;
+  left: 0%;
+  font-family: "Century Gothic";
+  font-weight: 600;
+  font-size: 14px;
+  z-index: 1000045;
+  color: black;
+  display: none;
+}
+
+.dropdownC {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  left: 0%;
+  min-width: 160px;
+  z-index: 1000027;
+  list-style: none;
+  font-family: "Century Gothic";
+}
+
+.dropdown:hover .dropdownC {
+    background-color: #0f1320;
+  display: block;
+  color: white;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .dropdown {
+    display: block;
+    color: white;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+  }
+}
