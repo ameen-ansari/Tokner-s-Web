@@ -1,0 +1,245 @@
+.parent {
+  width: 100%;
+  padding-bottom: 5rem;
+  padding-top: 1rem;
+}
+
+.cardsParent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (max-width: 800px) {
+  .cardsParent {
+    flex-direction: column;
+    gap: 0px !important;
+  }
+  .cardsParent > div {
+    width: 90% !important;
+  }
+  .Card2 {
+    margin-top: 1rem !important;
+  }
+}
+
+.cardsParent > div {
+  width: 40%;
+  background: #171b29;
+  border-radius: 25px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.Card1 > div:nth-child(1) {
+  width: 60px;
+  height: 60px;
+  background: #22a75d;
+  box-shadow: 0px 15px 25px rgba(34, 167, 93, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.Card2 > div:nth-child(1) {
+  width: 60px;
+  height: 60px;
+  background: #2278d4;
+  box-shadow: 0px 15px 25px rgba(34, 120, 212, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.Card1 > p:nth-child(2) span {
+  font-family: "Century Gothic";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 54px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #22a75d;
+  border-bottom: 2px solid #22a75d;
+  margin-left: 12px;
+}
+.Card2 {
+  margin-top: 10rem;
+}
+.Card2 > p:nth-child(2) span {
+  font-family: "Century Gothic";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 54px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #2278d4;
+  border-bottom: 2px solid #2278d4;
+  margin-left: 12px;
+}
+.cardsParent > div > p:nth-child(2) {
+  font-family: "Azo Sans";
+  color: white;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 54px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.cardsParent > div > p:nth-child(3) {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.Card1 > div:nth-child(4) {
+  display: flex;
+  gap: 12px;
+  margin-top: 4rem;
+}
+.Card2 > div:nth-child(4) {
+  display: flex;
+  gap: 12px;
+}
+.Card1 > div:nth-child(4) > p {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #22a75d;
+  border-bottom: 2px solid #22a75d;
+}
+.Card2 > div:nth-child(4) > p {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #2278d4;
+  border-bottom: 2px solid #2278d4;
+}
+
+/* Under Cards Sec... */
+.parent2 {
+  display: flex;
+}
+
+.parent2 > div:nth-child(1) {
+  flex: 1;
+  background-image: url(../../../Images/HomePage/Cards/Mask\ Group.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex: 1;
+  border-radius: 0px 300px 0px 0px;
+}
+.parent2 > div:nth-child(1) > img {
+  display: none;
+}
+@media (max-width: 700px) {
+  .parent2 > div:nth-child(1) {
+    flex: 0;
+    display: none;
+  }
+  .parent2 {
+    flex-direction: column;
+  }
+
+  .parent2 > div:nth-child(2) {
+    flex: 0;
+    display: block !important;
+  }
+    .parent2 > div:nth-child(3) {
+      border-radius: 0px 200px 0px 0px !important;
+      position: relative;
+      left: 0%;
+      bottom: 0.3rem;
+      padding: 10rem 0rem 4rem 1rem;
+    }
+  .parent2 > div:nth-child(2)> img {
+    width: 100%;
+  }
+  
+}
+
+@media (max-width: 1400px) {
+  .parent2 > div:nth-child(1) img {
+    border-radius: 0px 300px 0px 0px !important;
+  }
+  .parent2 > div:nth-child(3) {
+    border-radius: 300px 0px 0px 0px;
+  }
+  .parent2 > div:nth-child(3) > * {
+    padding-right: 0.5rem;
+  }
+}
+@media (min-width: 1400px) {
+  .parent2 > div:nth-child(3) {
+    border-radius: 300px 0px 0px 0px !important;
+  }
+  .parent2 > div:nth-child(3) > * {
+    padding-left: 2rem;
+  }
+}
+.parent2 > div:nth-child(2) {
+  flex: 0;
+  display: none;
+}
+.parent2 > div:nth-child(3) {
+  flex: 1;
+  background-color: #ffffff;
+}
+
+.whiteCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 14rem 0rem 4rem 2rem;
+}
+
+.whiteCard > p:nth-child(1) {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+}
+
+.whiteCard > p:nth-child(2) {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #0f1320;
+  opacity: 0.6;
+}
+
+.whiteCard > p:nth-child(3) {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0f1320;
+  opacity: 0.6;
+}
+.whiteCard > p:nth-child(4) {
+  font-family: "Azo Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0f1320;
+  opacity: 0.6;
+}
