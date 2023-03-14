@@ -36,7 +36,7 @@ function Navbar() {
             </li>
           </ul>
         </div>
-        <button>Sign In</button>
+        <button className={style.btn1}>Sign In</button>
         <button>Sign Up</button>
       </div>
       <img className={style.Union} src={Union} alt="" />

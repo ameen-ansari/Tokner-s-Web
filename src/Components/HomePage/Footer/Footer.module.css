@@ -1,0 +1,143 @@
+.parent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.parent > div:nth-child(1) {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+  padding: 2rem 0px;
+}
+
+.parent > div:nth-child(1) > p {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.parent > div:nth-child(1) > span {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #ffffff;
+  opacity: 0.16;
+}
+
+.parent > div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  padding: 5rem 0px;
+}
+
+.parent > div:nth-child(2) > div > div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.parent > div:nth-child(2) > * {
+  flex: 1;
+}
+.parent > div:nth-child(2) > div:nth-child(2) {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.parent > div:nth-child(2) > div:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.parent > div:nth-child(2) > div:nth-child(3) > p {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: right;
+  color: #ffffff;
+}
+.parent > div:nth-child(2) > div:nth-child(3) > div > p {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  text-align: right;
+  letter-spacing: 0.02em;
+  text-decoration-line: underline;
+  color: #ffffff;
+}
+
+@media (max-width: 800px) {
+  .parent > div:nth-child(2) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 0px;
+  }
+
+  .parent > div:nth-child(2) > div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .parent > div:nth-child(2) > div:nth-child(2) {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .parent > div:nth-child(2) > div:nth-child(3) {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .parent > div:nth-child(2) > * {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .parent > div:nth-child(1) {
+    display: none;
+  }
+  .parent > div:nth-child(2) > div:nth-child(2) {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .parent > div:nth-child(2) > div:nth-child(3) {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

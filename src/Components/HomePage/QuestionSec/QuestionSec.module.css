@@ -1,0 +1,350 @@
+.Allparent {
+  background-color: #ffffff !important  ;
+  margin-top: -0.1rem !important;
+  position: relative;
+  left: 0%;
+  bottom: 1rem;
+}
+.parent {
+  width: 100%;
+  display: flex;
+  border-radius: 0px 100px 0px 0px;
+  background-color: #0f1320;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.child1 {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding: 4rem 0px;
+  background-color: #0f1320;
+  border-radius: 0px 100px 0px 0px;
+  width: 25vw;
+}
+
+@media (max-width:1700px) {
+  .child1{
+    width: 45vw;
+  }
+}
+@media (max-width:950px) {
+  .child1 {
+    border-radius: 0%;
+    align-items: center;
+    justify-content: center;
+    width: 60vw !important;
+    
+  }
+
+.child1 >div:nth-child(2){
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+}
+.child1 > div:nth-child(1) {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 1rem;
+}
+.child1 > div:nth-child(1) > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.child1 > div:nth-child(1) > div > p {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff !important;
+}
+.child1 > div > span {
+  padding: 1.5rem;
+  border-radius: 50% 50% 50% 15%;
+  background: #22a75d;
+  box-shadow: 0px 15px 25px rgba(34, 167, 93, 0.25);
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 36px;
+  text-align: center;
+  color: #0f1320;
+}
+
+.child1 > div > div > span {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
+  align-self: flex-start !important;
+}
+
+.child1 > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  gap: 0.5rem;
+}
+
+.child1 > div:nth-child(2) > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.child1 > div:nth-child(2) > div > span {
+  color: #22a75d;
+  font-family: "Azo Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 34px;
+  margin-right: 0.5rem;
+}
+.child2 > div > span {
+  background: #2278d4;
+  box-shadow: 0px 15px 25px rgba(34, 120, 212, 0.25);
+}
+.child1 > div:nth-child(1) > div > span {
+  background: #22a75d;
+  width: 0.7rem;
+  height: 0.7rem;
+}
+.child2 > div:nth-child(1) > div > span {
+  background: #2278d4;
+  width: 0.7rem;
+  height: 0.7rem;
+}
+.child3 > div:nth-child(1) > div > span {
+  background: #ffd100;
+  width: 0.7rem;
+  height: 0.7rem;
+}
+.child4 > div:nth-child(1) > div > span {
+  background: #e20613;
+  width: 0.7rem;
+  height: 0.7rem;
+}
+.child3 > div > span {
+  background: #ffd100;
+  box-shadow: 0px 15px 25px rgba(255, 209, 0, 0.25);
+}
+.child4 > div > span {
+  background: #e20613;
+  box-shadow: 0px 15px 25px rgba(226, 6, 19, 0.25);
+}
+.child1 > div:nth-child(2) > div > p {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 34px;
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+@media (max-width: 700px) {
+.parent {
+    border-radius: 0%;
+}
+
+.child1 {
+    border-radius: 0%;
+    align-items: center;
+    justify-content: center;
+    width: 80vw !important;
+    
+  }
+
+.child1 >div:nth-child(2){
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+}
+
+/* Under Questions Sec... */
+
+.UnderQSec {
+  display: flex;
+  padding: 6rem 0px;
+  width: 100%;
+  background-color: #0f1320;
+  border-radius: 0px 0px 0px 100px;
+}
+/* .Allparent2 {
+    width: 100%;
+    background-color:#01b4ec;
+} */
+
+@media (max-width: 950px) {
+  .UnderQSec {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column-reverse;
+    padding-bottom: 4rem !important;
+  }
+
+  .UnderQSec > div > div {
+    display: flex;
+    flex-direction: column;
+  }
+  .UnderQSec > div > div > img {
+    width: 30%;
+  }
+  .UnderQSec > div:nth-child(1) {
+    padding: 0px 1rem !important;
+  }
+  .UnderQSec > div:nth-child(1) > div > span {
+    font-family: "Century Gothic";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px !important  ;
+    line-height: 54px;
+    color: #ffffff;
+  }
+}
+@media (max-width: 550px) {
+  .UnderQSec > div:nth-child(1) > div > span {
+    font-family: "Century Gothic";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px !important  ;
+    line-height: 54px;
+    color: #ffffff;
+  }
+}
+
+@media (max-width: 700px) {
+    .parent {
+        border-radius: 0%;
+    }
+    
+    .child1 {
+        border-radius: 0%;
+    }
+    }
+
+.UnderQSec > div {
+  flex: 1;
+}
+
+.UnderQSec > div:nth-child(1) {
+  padding: 0px 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.UnderQSec > div:nth-child(1) > div > span {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 54px;
+  color: #ffffff;
+}
+
+.UnderQSec > div:nth-child(1) > p:nth-child(2) {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #9fa1a6;
+}
+.UnderQSec > div:nth-child(1) > p:nth-child(3) {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  opacity: 0.6;
+}
+.UnderQSec > div:nth-child(1) > p:nth-child(4) {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  opacity: 0.6;
+}
+.UnderQSec > div:nth-child(1) > p:nth-child(5) {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #9fa1a6;
+}
+.UnderQSec > div:nth-child(1) > p:nth-child(6) {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  opacity: 0.6;
+}
+.UnderQSec > div:nth-child(1) > p:nth-child(7) {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #9fa1a6;
+}
+.UnderQSec > div:nth-child(1) > p:nth-child(7) span {
+  color: #ffd100;
+  margin: 0px 0.4rem;
+}
+.UnderQSec > div:nth-child(1) > p:nth-child(8) {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  opacity: 0.6;
+}
+.UnderQSec > div:nth-child(1) > p:nth-child(9) {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  opacity: 0.6;
+}
+.UnderQSec > div:nth-child(2) > img {
+  width: 100%;
+  height: 100%;
+}
+
+.UnderQSec button {
+    font-family: "Century Gothic";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    border: 1px solid #22a75d;
+    background-color: #0f1320;
+    color: #ffffff;
+    padding: 0.8rem 2rem;
+    border-radius: 52px;
+}

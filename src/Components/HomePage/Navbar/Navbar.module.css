@@ -2,6 +2,14 @@
   width: 100%;
   display: flex;
   padding: 2rem;
+  
+}
+
+.bgi {
+   position: absolute;
+   top: 0%;
+   right: 0%;
+   opacity:0.1;
 }
 
 .navbarDiv1 {
@@ -79,6 +87,10 @@
   color: #ffffff;
   padding: 0.8rem 2rem;
   border-radius: 52px;
+}
+
+.btn1 {
+  border: 0 !important;
 }
 
 /* Drop Down */
