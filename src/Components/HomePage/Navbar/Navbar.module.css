@@ -2,14 +2,9 @@
   width: 100%;
   display: flex;
   padding: 2rem;
-  
-}
-
-.bgi {
-   position: absolute;
-   top: 0%;
-   right: 0%;
-   opacity:0.1;
+  position: fixed;
+  z-index: 2;
+  background-color: #0f1320;
 }
 
 .navbarDiv1 {
@@ -39,7 +34,7 @@
   gap: 1rem;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1000px) {
   .navbarDiv2 > button:nth-child(2) {
     display: none;
   }

@@ -1,0 +1,43 @@
+.parent {
+  width: 95%;
+  margin-left: 5%;
+  padding: 4rem 0px 4rem 2rem;
+}
+
+.card > div:nth-child(1) > p:nth-child(1) {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.card > div:nth-child(1) > p:nth-child(2) {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
+.card {
+  width: 90% !important;
+  background: #0d0b16;
+  border-radius: 25px;
+  padding: 2rem 3rem;
+  display: flex !important;
+  flex-direction: column;
+  gap: 4rem;
+  margin-left: 1.5rem;
+}
+
+@media (max-width: 800px) {
+  .parent {
+    width: 90% !important;
+    padding:6rem 0% !important;
+  }
+  .card {
+    width: 100%;
+  }
+}

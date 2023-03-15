@@ -1,10 +1,14 @@
 import './App.css';
-import HomePage from './Pages/HomePage/HomePage';
+import Navbar from './Components/HomePage/Navbar/Navbar';
+import TeamPage from './Pages/TeamPage/TeamPage';
+// import HomePage from './Pages/HomePage/HomePage';
 
 function App() {
   return (
     <div className='Parent'>
-      <HomePage />
+      <Navbar />
+      {/* <HomePage /> */}
+      <TeamPage />
     </div>
   );
 }

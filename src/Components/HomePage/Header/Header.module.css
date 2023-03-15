@@ -1,10 +1,13 @@
 .parent {
   display: flex;
+  padding-top:10rem ;
 }
 
 .parent img {
   width: 100%;
 }
+
+
 
 .parent > div:nth-child(1) {
   flex: 1;
@@ -87,7 +90,7 @@
 @media (max-width: 800px) {
   .parent {
     flex-direction: column;
-    padding: 1rem 0px 4rem 0px;
+    padding: 10rem 0px 4rem 0px;
   }
   .parent img {
     width: 100%;

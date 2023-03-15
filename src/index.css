@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-:root{
-  --GIVEN_GREEN: #22A75D;
-}
-
 @font-face {
   font-family: 'Century Gothic';
   src: url('./Fonts/Century Ghothic/Century Gothic.ttf') format('truetype');
