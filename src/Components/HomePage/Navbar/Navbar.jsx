@@ -78,7 +78,7 @@ function Navbar() {
               </li>
             </ul>
           </div>
-          <button onClick={showOffC} className={style.btn1}>
+          <button className={style.btn1}>
             Sign In
           </button>
           <button>Sign Up</button>

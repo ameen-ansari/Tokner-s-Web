@@ -162,6 +162,7 @@
   flex-direction: column;
   color: white;
   transition: 1.5s;
+  display: none;
 }
 
 .offcanvas > div {
