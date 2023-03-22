@@ -1,12 +1,14 @@
 import style from "./DetailsSec.module.css";
 import img1 from "../../../Images/HomePage/Cards/Vector (2).svg";
+import MultipleItems from "./Slider";
+
 
 function DetailsSec() {
   return (
     <>
       <div className={style.parent}>
         <p>Presale Details</p>
-        <div className={style.cardParent}>
+        {/* <div className={style.cardParent}>
           <div>
             <div>
               <span>Q1</span>
@@ -61,7 +63,8 @@ function DetailsSec() {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
+        <MultipleItems />
       </div>
       <div className={style.parent2}>
         <p>How to buy</p>

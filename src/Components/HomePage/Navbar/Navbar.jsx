@@ -11,6 +11,7 @@ function Navbar() {
   let pushSlash = () => {
     navigate("/");
     removeOffC();
+    setBorder('')
   };
   let pushTeamPage = () => {
     navigate("/team");
@@ -55,8 +56,8 @@ function Navbar() {
             >
               Tokens
             </p>
-            <p>Connect wallet</p>
-            <p>Lightpaper</p>
+            <p className="cursor-pointer">Connect wallet</p>
+            <p className="cursor-pointer">Lightpaper</p>
           </div>
         </div>
 
@@ -65,49 +66,51 @@ function Navbar() {
             <p>More</p>
             <ul className={`${style.dropdownC}`}>
               <li>
-                <p onClick={pushTeamPage}>Our team</p>
+                <p className="cursor-pointer" onClick={pushTeamPage}>
+                  Our team
+                </p>
               </li>
               <li>
-                <p onClick={pushTokenPage}>Tokens</p>
+                <p className="cursor-pointer" onClick={pushTokenPage}>
+                  Tokens
+                </p>
               </li>
               <li>
-                <p>Connect wallet</p>
+                <p className="cursor-pointer">Connect wallet</p>
               </li>
               <li>
-                <p>Lightpaper</p>
+                <p className="cursor-pointer">Lightpaper</p>
               </li>
             </ul>
           </div>
-          <button className={style.btn1}>
-            Sign In
-          </button>
+          <button className={style.btn1}>Sign In</button>
           <button>Sign Up</button>
         </div>
-          <img onClick={showOffC} className={style.Union} src={Union} alt="" />
-      <div id="offC" className={style.offcanvas}>
-        <div>
-          <p className={style.cencel} onClick={removeOffC}>
-            X
-          </p>
-          <p
-            style={{ cursor: "pointer" }}
-            className={border === "teamP" ? style.active : null}
-            onClick={pushTeamPage}
-          >
-            Our team
-          </p>
-          <p
-            style={{ cursor: "pointer" }}
-            className={border === "tokenP" ? style.active : null}
-            onClick={pushTokenPage}
-          >
-            Tokens
-          </p>
-          <p>Connect wallet</p>
-          <p>Lightpaper</p>
-          <button>Sign Up</button>
+        <img onClick={showOffC} className={style.Union} src={Union} alt="" />
+        <div id="offC" className={style.offcanvas}>
+          <div>
+            <p className={style.cencel} onClick={removeOffC}>
+              X
+            </p>
+            <p
+              style={{ cursor: "pointer" }}
+              className={border === "teamP" ? style.active : null}
+              onClick={pushTeamPage}
+            >
+              Our team
+            </p>
+            <p
+              style={{ cursor: "pointer" }}
+              className={border === "tokenP" ? style.active : null}
+              onClick={pushTokenPage}
+            >
+              Tokens
+            </p>
+            <p style={{ cursor: "pointer" }}>Connect wallet</p>
+            <p style={{ cursor: "pointer" }}>Lightpaper</p>
+            <button>Sign Up</button>
+          </div>
         </div>
-      </div>
       </div>
     </div>
   );

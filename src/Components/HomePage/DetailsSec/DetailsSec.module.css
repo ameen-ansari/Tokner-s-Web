@@ -197,8 +197,7 @@
     top: 2rem ;
 }
 .cardsparent2 > span > img{
-    width: 0.5rem;
-    height: 0.5rem;
+    max-width: 5px;
 }
 .cardsparent2 > span {
     width:10px;

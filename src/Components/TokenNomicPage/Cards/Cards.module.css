@@ -1,6 +1,6 @@
 .parent {
   width: 100%;
-  padding: 6rem 0px 2rem 0px;
+  padding: 15rem 0px 2rem 0px;
 }
 
 .cardsParent {
@@ -126,7 +126,7 @@
 }
 @media (max-width: 1500px) {
   .cardsParent2 {
-    padding-top: 6rem;
+    padding-top: 5rem;
   }
 }
 @media (max-width: 1200px) {
@@ -160,7 +160,7 @@
   font-family: "Century Gothic";
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 32px;
   line-height: 38px;
   text-align: center;
   letter-spacing: -0.02em;

@@ -12,25 +12,25 @@ function Footer() {
   return (
     <div className={style.parent}>
       <div>
-        <p>OUR TEAM</p>
+        <p className="cursor-pointer">OUR TEAM</p>
         <span>/</span>
-        <p>TOKENS</p>
+        <p className="cursor-pointer">TOKENS</p>
         <span>/</span>
-        <p> CONNECT WALLET</p>
+        <p className="cursor-pointer"> CONNECT WALLET</p>
         <span>/</span>
-        <p>LIGHTPAPER</p>
+        <p className="cursor-pointer">LIGHTPAPER</p>
       </div>
       <div>
         <div>
           <img src={logo} alt="" />
         </div>
         <div>
-          <img src={img1} alt="" />
-          <img src={img2} alt="" />
-          <img src={img3} alt="" />
-          <img src={img4} alt="" />
-          <img src={img5} alt="" />
-          <img src={img6} alt="" />
+          <img className="cursor-pointer" src={img1} alt="" />
+          <img className="cursor-pointer" src={img2} alt="" />
+          <img className="cursor-pointer" src={img3} alt="" />
+          <img className="cursor-pointer" src={img4} alt="" />
+          <img className="cursor-pointer" src={img5} alt="" />
+          <img className="cursor-pointer" src={img6} alt="" />
         </div>
         <div>
           <p>© 2021 Tokners. All rights reserved.</p>

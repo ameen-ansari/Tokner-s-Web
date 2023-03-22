@@ -1,5 +1,5 @@
 .parent {
-  padding-top: 10rem;
+  padding-top: 5rem;
   display: flex;
   background: #0f1320;
   flex-direction: column;
@@ -32,6 +32,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 .parent > div:nth-child(1) > div:nth-child(2) {
   display: flex;
@@ -52,4 +53,8 @@
   line-height: 42px;
   letter-spacing: -0.02em;
   color: #ffffff;
+}
+
+.parent > div:nth-child(1){
+  display: none;
 }
