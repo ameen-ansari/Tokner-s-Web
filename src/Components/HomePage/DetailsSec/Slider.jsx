@@ -27,7 +27,7 @@ export default class MultipleItems extends Component {
             breakpoint: 650,
             settings: {
               dots: false,
-              slidesToShow: 1,
+              slidesToShow: 1.1,
               slidesToScroll: 1,
               infinite: true,
             },
@@ -49,15 +49,15 @@ export default class MultipleItems extends Component {
               </span>
             </div>
             <div>
-              <p>Phase One</p>
-              <p>0/04/2021</p>
+              <p >Phase One</p>
+              <p className="opacity-80 mt-3">0/04/2021 - 16/04/2021</p>
             </div>
             <div>
-              <p>1 BNB = 100000 WNTR</p>
-              <p>
+              <p className="opacity-80 mb-6">1 BNB = 100000 WNTR</p>
+              <p className="opacity-80">
                 Soft cap:<span>5000 BNB</span>
               </p>
-              <p>
+              <p className="opacity-80">
                 Hard cap:<span>10000 BNB</span>
               </p>
             </div>
@@ -74,15 +74,15 @@ export default class MultipleItems extends Component {
               </span>
             </div>
             <div>
-              <p>Phase One</p>
-              <p>0/04/2021</p>
+              <p >Phase Two</p>
+              <p className="opacity-80 mt-3">0/04/2021 - 16/04/2021</p>
             </div>
             <div>
-              <p>1 BNB = 100000 WNTR</p>
-              <p>
+              <p className="opacity-80 mb-6">1 BNB = 100000 WNTR</p>
+              <p className="opacity-80">
                 Soft cap:<span>5000 BNB</span>
               </p>
-              <p>
+              <p className="opacity-80">
                 Hard cap:<span>10000 BNB</span>
               </p>
             </div>
@@ -99,15 +99,15 @@ export default class MultipleItems extends Component {
               </span>
             </div>
             <div>
-              <p>Phase One</p>
-              <p>0/04/2021</p>
+              <p >Phase Three</p>
+              <p className="opacity-80 mt-3">0/04/2021 - 16/04/2021</p>
             </div>
             <div>
-              <p>1 BNB = 100000 WNTR</p>
-              <p>
+              <p className="opacity-80 mb-6">1 BNB = 100000 WNTR</p>
+              <p className="opacity-80">
                 Soft cap:<span>5000 BNB</span>
               </p>
-              <p>
+              <p className="opacity-80">
                 Hard cap:<span>10000 BNB</span>
               </p>
             </div>

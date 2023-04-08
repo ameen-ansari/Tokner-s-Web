@@ -5,10 +5,23 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  background-image: url('../../../Images/HomePage/Cards/Mask Group (2).svg');
-  background-size: cover;
+  position: relative;
 }
 
+.bg {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  z-index: 1;
+}
+
+@media (max-width: 800px) {
+  .bg{
+    display: none;
+
+  }
+}
 .cardParent {
   width: 95%;
   margin: auto;
@@ -16,10 +29,14 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  position: relative;
+  top: 5rem;
+  position: relative;
+  z-index: 2;
 }
 
 .parent > p {
-  margin-top: 22rem;
+  margin-top: 23%;
   font-family: "Century Gothic";
   font-style: normal;
   font-weight: 700;
@@ -27,10 +44,14 @@
   line-height: 54px;
   text-align: center;
   color: #ffffff;
+  position: relative;
+  z-index: 2;
 }
 @media (max-width: 800px) {
   .parent {
     background-image: url('../../../Images/HomePage/Cards/Mask Group (3).svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
   .cardParent > div:nth-child(1) {
     display: none;
@@ -40,7 +61,12 @@
   }
   .parent > p {
     margin-top: 8rem;
-    font-size: 32px;
+    font-size: 36px;
+  }
+}
+@media (max-width: 650px) {
+  .parent > p {
+    margin-top:30%;
   }
 }
 
@@ -151,6 +177,10 @@
   align-items: center;
   padding: 10rem 0px;
   gap: 3rem;
+  position:relative;
+  z-index: 3;
+  width:90%;
+  margin:auto ;
 }
 
 @media (max-width:900px) {
@@ -192,7 +222,12 @@
     z-index: 1;
 
 }
-.cardsparent2 > div:nth-child(3) {
+.cardsparent2 > span:nth-child(4) {
+    position: relative ;
+    z-index: 1;
+
+}
+.cardsparent2 > div:hover {
     position: relative ;
     top: 2rem ;
 }
@@ -205,7 +240,7 @@
     transform: scale(2.5);
     align-self: center !important;
     padding: 1rem;
-    background-color: #191b21;
+    background-color: #0F1320;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -218,7 +253,16 @@
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
-  padding: 2rem;
+  padding:10% 24%;
+}
+
+@media (max-width: 1500px) {
+  .cardsparent2 > div > p {
+    padding:10% 12%;
+  }
+  .parent2 {
+    width: 95%;
+  }
 }
 .cardsparent2 > div > span{
     font-family: 'Century Gothic';

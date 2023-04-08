@@ -3,15 +3,21 @@
   display: flex;
   padding: 2rem;
   position: fixed;
-  z-index: 2;
-  background-color: #0f1320;
-  /* position: relative; */
+  z-index: 4;
 }
 
 .navbarDiv1 {
   flex: 1;
   display: flex;
-  gap: 3rem;
+  gap: 5rem;
+  padding:0.5rem;
+}
+
+@media (max-width: 870px) {
+  .navbarDiv1 {
+    gap: 1rem;
+  }
+
 }
 .navbarDiv1 div:nth-child(2) {
   display: flex;
@@ -82,12 +88,19 @@
   letter-spacing: 0em;
   text-align: center;
   border: 1px solid #22a75d;
-  background-color: #0f1320;
   color: #ffffff;
   padding: 0.8rem 2rem;
+  position: relative;
+  z-index: 3;
   border-radius: 52px;
 }
 
+@media (min-width: 900px) {
+  .navbarDiv2 > button:nth-child(3){
+    width: 147px;
+    height:48px;
+  }
+}
 .btn1 {
   border: 0 !important;
 }

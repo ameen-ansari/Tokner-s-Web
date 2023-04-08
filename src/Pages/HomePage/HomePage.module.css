@@ -2,8 +2,26 @@
     width: 100%;
     background-color:  #0F1320;
     position: relative;
-    /* background-image: url('../../Images/HomePage/Navbar/bg (1).svg');
-    background-repeat: no-repeat;
-    background-size: 100%; */
 }
 
+.gradient {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    z-index: 1;
+}
+.gradient2 {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    width: 100%;
+    z-index: 1;
+}
+
+
+@media (max-width: 600px) {
+    .gradient2{
+        display:none;
+    }
+}

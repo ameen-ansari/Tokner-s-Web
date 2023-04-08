@@ -1,7 +1,13 @@
 .cardParent {
-  width: 95%;
+  width: 84%;
   margin: auto;
-  gap: 1rem;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 1500px) {
+  .cardParent{
+    width:92%;
+  }
 }
 
 .card > div > span {
@@ -38,22 +44,41 @@
 
 .card {
   background-color: #ffffff;
-  width: 95% !important;
+  width: 511px !important;
+  height: 585px !important;
   margin:3rem auto !important;
-  display: flex;
+  display: flex !important;
   flex-direction: column;
   justify-content: center;
   align-items: center ;
-  gap: 3rem;
-  padding: 2rem 3rem;
+  gap: 5rem;
+  padding: 8rem 0px 5rem 0px ;
   border-radius: 25px;
   flex: 1;
 }
 
-.card > * {
-    margin: 2rem auto;
+@media (max-width: 1900px) {
+  .card{
+    width: 95% !important;
+  }
+
 }
 
+@media (max-width: 650px) {
+  .cardParent{
+    width: 100%;
+  }
+  .card{
+    /* width: 335px !important; */
+    height: 445px !important;
+    gap:2rem;
+    margin: 1rem 0px 6rem 17.5% !important;
+  }
+}
+.card:hover {
+  position: relative;
+  top: 15rem;
+}
 
 .card > div:nth-child(1) > span {
     width: 5rem;
@@ -79,7 +104,6 @@
 }
 
 .card div:nth-child(3) > p:nth-child(1) {
-    margin-top: 3rem;
   font-family: "Century Gothic";
   font-style: normal;
   font-weight: 700;

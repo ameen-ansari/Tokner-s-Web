@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./QuestionSec.module.css";
 import logo from "../../../Images/HomePage/QuestionsSec/logo121.svg";
-import whm from "../../../Images/HomePage/QuestionsSec/woman-hm.svg";
+import whm from "../../../Images/HomePage/QuestionsSec/Group 48.svg";
 
 function QuestionSec() {
   return (
@@ -115,7 +115,7 @@ function QuestionSec() {
           <div>
             <div>
               <img src={logo} alt="" />
-              <span>Tokner is coming</span>
+              <span className="pb-3">Tokner is coming</span>
             </div>
             <p>
               Cryptocurrency adoption is at less than 1% of the global world
@@ -164,6 +164,10 @@ function QuestionSec() {
               it would make the most sense in the world.
             </p>
             <button>Read More</button>
+            <p>
+              Hide
+            </p>
+            
           </div>
           <div>
             <img src={whm} alt="" />
