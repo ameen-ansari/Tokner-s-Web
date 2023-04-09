@@ -5,6 +5,12 @@
   position: fixed;
   z-index: 4;
 }
+@media (max-width: 500px) {
+  .parent {
+    padding: 2rem 1rem; 
+  }
+
+}
 
 .navbarDiv1 {
   flex: 1;

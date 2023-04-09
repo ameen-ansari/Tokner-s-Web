@@ -36,8 +36,8 @@ function Header() {
       </div>
       <div className={style.Before575}>
         <div>
-          <p>Tknrs Token Distribution Schedule Total Supply:</p>
-          <p>10,000,000,000</p>
+          <p>Premined Tokens</p>
+          <p>30,000,000,000</p>
           <p>Tknrs Tokens</p>
         </div>
         <div>

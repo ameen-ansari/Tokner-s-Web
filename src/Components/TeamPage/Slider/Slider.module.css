@@ -115,9 +115,7 @@ overflow: hidden;
 
 /* sh */
 .parent {
-  /* padding-top: 10rem; */
   display: flex;
-  /* background: #0f1320; */
   flex-direction: column;
   width: 92%;
   margin-left: 8%;

@@ -1,4 +1,5 @@
 import style from "./Cards.module.css";
+import bgTYpe from '../../../Images/TokenNomicPage/Mask Group (6).svg'
 
 function Cards() {
   return (
@@ -228,6 +229,7 @@ function Cards() {
             </p>
           </div>
         </div>
+          <img src={bgTYpe} alt="" />
       </div>
     </>
   );

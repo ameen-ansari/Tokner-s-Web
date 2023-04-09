@@ -3,4 +3,27 @@
     padding-top: 10rem;
     color: aliceblue;
     width: 100%;
+    position: relative;
 }
+
+.gradient {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    z-index: 1;
+  }
+  .gradient2 {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  
+  @media (max-width: 600px) {
+    .gradient2{
+        display:none;
+    }
+  }

@@ -17,8 +17,8 @@ function HomePage() {
       <QuestionSec />
       <DetailsSec  />
       <Footer />
-      <img className={style.gradient} src={gradient} alt="" />
-      <img className={style.gradient2} src={gradient2} alt="" />
+      <img className={style.gradient} src={gradient} alt="gradTYpe" />
+      <img className={style.gradient2} src={gradient2} alt="gradTYpe" />
     </div>
   );
 }
