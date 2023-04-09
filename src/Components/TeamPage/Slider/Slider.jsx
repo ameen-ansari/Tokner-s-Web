@@ -45,31 +45,20 @@ export default class SimpleSlider extends Component {
           breakpoint: 2500,
           settings: {
             dots: false,
-            slidesToShow: 6,
-            slidesToScroll: 1,
-            infinite: true,
-          },
-        },
-        {
-          breakpoint: 1800,
-          settings: {
-            dots: false,
             slidesToShow: 5,
             slidesToScroll: 1,
             infinite: true,
-          },
-        },
+          }},
         {
-          breakpoint: 1200,
+          breakpoint: 2000,
           settings: {
             dots: false,
-            slidesToShow: 3,
+            slidesToShow: 4.5,
             slidesToScroll: 1,
             infinite: true,
-          },
-        },
+          }},
         {
-          breakpoint: 1400,
+          breakpoint: 1725,
           settings: {
             dots: false,
             slidesToShow: 4,
@@ -78,7 +67,35 @@ export default class SimpleSlider extends Component {
           },
         },
         {
-          breakpoint: 800,
+          breakpoint: 1525,
+          settings: {
+            dots: false,
+            slidesToShow: 3.5,
+            slidesToScroll: 1,
+            infinite: true,
+          },
+        },
+        {
+          breakpoint: 1325,
+          settings: {
+            dots: false,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+          },
+        },
+        {
+          breakpoint: 1125,
+          settings: {
+            dots: false,
+            slidesToShow: 2.5,
+            slidesToScroll: 1,
+            infinite: true,
+          },
+        },
+
+        {
+          breakpoint: 925,
           settings: {
             dots: false,
             slidesToShow: 2,
@@ -87,16 +104,25 @@ export default class SimpleSlider extends Component {
           },
         },
         {
-          breakpoint: 650,
+          breakpoint:725,
+          settings: {
+            dots: true,
+            slidesToShow: 1.5,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint:525,
           settings: {
             dots: true,
             slidesToShow: 1,
             slidesToScroll: 1,
           },
         },
+
       ],
     };
-    let imgArr = [img1, img2, img3, img4, img1, img2];
+    let imgArr = [img1, img2, img3, img4, img1, img2 , img3];
 
     return (
       <div className={style.parent}>
@@ -123,7 +149,7 @@ export default class SimpleSlider extends Component {
               </div>
               <div className={`${style.card} ${style.ceo}`}>
                 <div>
-                  <p>Naveed Serwer</p>
+                  <p>Lee Lee</p>
                   <p>CTO and Co founder</p>
                 </div>
                 <img src={img2} alt="" />
@@ -148,6 +174,20 @@ export default class SimpleSlider extends Component {
                   <p>CTO and Co founder</p>
                 </div>
                 <img src={img1} alt="" />
+              </div>
+               <div className={style.card}>
+                <div>
+                  <p>Brad pie</p>
+                  <p>CEO and Co founder</p>
+                </div>
+                <img src={img1} alt="" />
+              </div>
+              <div className={`${style.card} ${style.ceo}`}>
+                <div>
+                  <p>Naveed Serwer</p>
+                  <p>CTO and Co founder</p>
+                </div>
+                <img src={img2} alt="" />
               </div>
         </Slider>
       </div>

@@ -1,10 +1,12 @@
 .parent {
   width: 95%;
   /* margin-left: 5%; */
-  padding: 5rem 0px 4rem 2rem;
+  padding: 8rem 0px 12rem 0rem;
   display: flex;
   flex-direction: column;
   gap: 4rem;
+  position:relative;
+  z-index:2;
 }
 
 .card > div:nth-child(1) > p:nth-child(1) {
@@ -26,24 +28,87 @@
 }
 .card {
 overflow: hidden;
-  width: 90% !important;
+  width: 375px !important;
+  height:560px;
   background: #0d0b16;
   border-radius: 25px;
   padding: 2rem 2rem 0px 2rem;
   display: flex !important;
   flex-direction: column;
-  gap: 4rem;
-  margin-left: 1.5rem;
 }
 
-@media (max-width: 800px) {
-  .parent {
-    width: 90% !important;
-    padding:6rem 0% !important;
-    margin: auto;
+.card > img:nth-child(2){
+  height: 420px;margin: auto;
+  position: relative;
+  top: 7%;
+}
+
+@media (min-width: 1900px) {
+  .card > img:nth-child(2){
+    width: 257px;
+  height: 420px;
+  margin: auto;
   }
+}
+@media (max-width: 1900px) {
   .card {
-    width: 100%;
+    width: 95% !important;
+    height:560px;
+  }
+  .card > img:nth-child(2){
+    height:100%;
+    width: 95%;
+    margin: auto;
+    position: relative;
+    top: 7%;
+  }
+  
+
+}
+
+
+@media (min-width:1725px) {
+  .card{
+    margin-left: 0%;
+  }
+}
+@media (min-width:1525px) {
+  .card{
+  margin-left: 53%;
+  }
+}
+
+@media (max-width:1325px) {
+  .card{
+    margin-left: 0%;
+  }
+}
+@media (max-width:1125px) {
+  .card{
+    margin-left: 53%;
+  }
+}
+@media (max-width:925px) {
+  .card{
+    margin-left: 0%;
+  }
+}
+@media (max-width:725px) {
+  .card{
+    margin-left: 53%;
+  }
+}
+@media (max-width:525px) {
+  .card{
+    margin-left: 0%;
+    width:85% !important;
+    margin: auto !important;
+  }
+  .card > img:nth-child(2){
+    width:100% !important;
+    height: 100% !important;
+    position: relative;
+    bottom:10%;
   }
 }
 
@@ -52,9 +117,24 @@ overflow: hidden;
 .parent {
   /* padding-top: 10rem; */
   display: flex;
-  background: #0f1320;
+  /* background: #0f1320; */
   flex-direction: column;
-  width: 100%;
+  width: 92%;
+  margin-left: 8%;
+}
+
+@media (max-width: 1000px) {
+  .parent{
+    width: 99%;
+    margin-left: 1%;
+  }
+  .parent > div:nth-child(1){
+    width: 90% !important;
+    margin: auto;
+  }
+  .parent > div:nth-child(1) > div:nth-child(2) {
+    justify-content: flex-end !important;
+  }
 }
 
 .parent > div:nth-child(1) span {
@@ -79,7 +159,7 @@ overflow: hidden;
 }
 
 .parent > div:nth-child(1) {
-  width: 95%;
+  width: 100%;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -114,4 +194,16 @@ overflow: hidden;
   background-image: url('../../../Images/TeamPage/Group 26.svg');
   background-position: bottom;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 500px) {
+  .parent > div:nth-child(1) > div:nth-child(1) {
+    font-size: 32px;
+    line-height:36px ;
+    }
+
+    .parent {
+      padding: 4rem 0px 6rem 0rem;
+    }
+
 }

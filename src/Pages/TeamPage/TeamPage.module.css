@@ -4,6 +4,7 @@
   background: #0f1320;
   flex-direction: column;
   width: 100%;
+  position: relative;
 }
 
 .parent > div:nth-child(1) span {
@@ -57,4 +58,26 @@
 
 .parent > div:nth-child(1){
   display: none;
+}
+
+.gradient {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  z-index: 1;
+}
+.gradient2 {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  width: 100%;
+  z-index: 1;
+}
+
+
+@media (max-width: 600px) {
+  .gradient2{
+      display:none;
+  }
 }
