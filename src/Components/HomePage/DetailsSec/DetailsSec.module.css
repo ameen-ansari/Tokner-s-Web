@@ -48,11 +48,17 @@
   position: relative;
   z-index: 2;
 }
+@media (max-width: 450px) {
+  .parent {
+    padding-bottom: 10rem;
+    }
+
+}
 @media (max-width: 800px) {
   .parent {
     background-image: url('../../../Images/HomePage/Cards/Mask Group (3).svg');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
   }
   .cardParent > div:nth-child(1) {
     display: none;

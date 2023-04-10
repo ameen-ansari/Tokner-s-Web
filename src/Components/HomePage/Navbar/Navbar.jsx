@@ -25,12 +25,12 @@ function Navbar() {
   };
   let showOffC = () => {
     let offC = document.getElementById("offC");
-    offC.style.bottom = "-90vh";
+    offC.style.top = "0vh";
     offC.style.transition = "0.5s";
   };
   let removeOffC = () => {
     let offC = document.getElementById("offC");
-    offC.style.bottom = "100vh";
+    offC.style.top = "-100vh";
     offC.style.transition = "0.5s";
   };
 
