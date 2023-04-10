@@ -3,10 +3,23 @@ import Sliderr from "react-slick";
 import style from "./Slider.module.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import one from '../../../Images/HomePage/Cards/01.svg' 
+import two from '../../../Images/HomePage/Cards/02.svg' 
+import three from '../../../Images/HomePage/Cards/03.svg' 
 
 export default class MultipleItems extends Component {
   render() {
     const settings = {
+      appendDots: dots => (
+        <div>
+          <ul style={{ margin: "0px" }}> 
+            {dots}
+          </ul>
+        </div>
+      ),
+      customPaging: () => (
+        <div style={{ marginTop:'2rem', backgroundColor: "white", width: "10px", height: "10px", borderRadius: "5px" }}></div>
+      ),
         arrows: false,
         dots: false,
         infinite: true,
@@ -26,7 +39,7 @@ export default class MultipleItems extends Component {
           {
             breakpoint: 650,
             settings: {
-              dots: false,
+              dots: true,
               slidesToShow: 1.1,
               slidesToScroll: 1,
               infinite: true,
@@ -36,7 +49,7 @@ export default class MultipleItems extends Component {
     };
     return (
       <div className={style.cardParent}>
-        <Sliderr {...settings}>
+        <Sliderr ref={(c) => (this.slider = c)}  {...settings}>
           <div className={style.card}>
             <div>
               <span
@@ -61,6 +74,7 @@ export default class MultipleItems extends Component {
                 Hard cap:<span>10000 BNB</span>
               </p>
             </div>
+            <img src={one} alt="1" />
           </div>
           <div className={style.card}>
             <div>
@@ -86,6 +100,7 @@ export default class MultipleItems extends Component {
                 Hard cap:<span>10000 BNB</span>
               </p>
             </div>
+            <img src={two} alt="2" />
           </div>
           <div className={style.card}>
             <div>
@@ -111,6 +126,7 @@ export default class MultipleItems extends Component {
                 Hard cap:<span>10000 BNB</span>
               </p>
             </div>
+            <img src={three} alt="3" />
           </div>
           <div className={style.card}>
             <div>
@@ -120,7 +136,7 @@ export default class MultipleItems extends Component {
                   boxShadow: "0px 15px 25px rgba(226, 6, 19, 0.25)",
                 }}
               >
-                Q4
+                Q1
               </span>
             </div>
             <div>
@@ -136,6 +152,7 @@ export default class MultipleItems extends Component {
                 Hard cap:<span>10000 BNB</span>
               </p>
             </div>
+            <img src={one} alt="1" />
           </div>
         </Sliderr>
       </div>

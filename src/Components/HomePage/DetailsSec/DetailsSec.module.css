@@ -6,6 +6,7 @@
   align-items: center;
   gap: 1rem;
   position: relative;
+  padding-bottom: 7rem;
 }
 
 .bg {
@@ -179,7 +180,7 @@
   gap: 3rem;
   position:relative;
   z-index: 3;
-  width:90%;
+  width:84%;
   margin:auto ;
 }
 
@@ -195,6 +196,9 @@
     }
     .parent2{
         padding: 4rem 0px;
+    }
+    .cardsparent2 > div {
+      transform: scaleY(1.1) !important;
     }
 }
 
@@ -216,11 +220,11 @@
     background: #171b29;
     border-radius: 25px;
     padding: 2rem;
+    transform: scaleX(1.1);
 }
 .cardsparent2 > span:nth-child(2) {
     position: relative ;
     z-index: 1;
-
 }
 .cardsparent2 > span:nth-child(4) {
     position: relative ;
@@ -231,13 +235,11 @@
     position: relative ;
     top: 2rem ;
 }
-.cardsparent2 > span > img{
-    max-width: 5px;
-}
+
+
 .cardsparent2 > span {
-    width:10px;
-    height: 10px;
-    transform: scale(2.5);
+    width:86px;
+    height: 86px;
     align-self: center !important;
     padding: 1rem;
     background-color: #0F1320;
@@ -245,6 +247,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@media (max-width: 700px) {
+
+  .cardsparent2 > span {
+    width:60px;
+    height: 60px;}
 }
 .cardsparent2 > div > p {
   font-family: "Century Gothic";
@@ -272,4 +280,11 @@
     line-height: 24px;
     color: #FFFFFF;
     opacity: 0.3;
+}
+
+@media (max-width:900px) {
+  .cardsparent2 > div:hover {
+    position: relative ;
+    top: 0rem ;
+}
 }

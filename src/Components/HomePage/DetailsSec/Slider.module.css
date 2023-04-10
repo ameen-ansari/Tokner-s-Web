@@ -5,8 +5,8 @@
   z-index: 2;
 }
 @media (max-width: 1500px) {
-  .cardParent{
-    width:92%;
+  .cardParent {
+    width: 92%;
   }
 }
 
@@ -46,33 +46,32 @@
   background-color: #ffffff;
   width: 511px !important;
   height: 585px !important;
-  margin:3rem auto !important;
+  margin: 3rem auto !important;
   display: flex !important;
   flex-direction: column;
   justify-content: center;
-  align-items: center ;
+  align-items: center;
   gap: 5rem;
-  padding: 8rem 0px 5rem 0px ;
+  padding: 8rem 0px 5rem 0px;
   border-radius: 25px;
   flex: 1;
 }
 
 @media (max-width: 1900px) {
-  .card{
+  .card {
     width: 95% !important;
   }
-
 }
 
 @media (max-width: 650px) {
-  .cardParent{
+  .cardParent {
     width: 100%;
   }
-  .card{
+  .card {
     /* width: 335px !important; */
     height: 445px !important;
-    gap:2rem;
-    margin: 1rem 0px 6rem 17.5% !important;
+    gap: 2rem;
+    margin: 1rem 0px 1rem 17.5% !important;
   }
 }
 .card:hover {
@@ -81,14 +80,16 @@
 }
 
 .card > div:nth-child(1) > span {
-    width: 5rem;
-    height: 5rem;
-    margin: auto;
-    display: block;
+  width: 5rem;
+  height: 5rem;
+  margin: auto;
+  display: block;
+  position:relative;
+  z-index: 2;
 }
 .card div:nth-child(3) > p {
-    font-family: "Century Gothic";
-    font-style: normal;
+  font-family: "Century Gothic";
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   text-align: center;
@@ -115,18 +116,35 @@
 }
 
 .card div:nth-child(2) > p:nth-child(2) {
-    font-family: "Century Gothic";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    color: #191b21;
-    opacity: 0.8;
-  }
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #191b21;
+  opacity: 0.8;
+}
 
+.card:hover {
+  position: relative;
+  top: 3rem;
+}
+
+.card > img:nth-child(4) {
+  position: absolute;
+  top: 25%;
+  z-index: 1;
+}
+@media (max-width: 650px) {
   .card:hover {
     position: relative;
-    top: 3rem;
+    top: 0rem;
   }
-  
+  .card > img:nth-child(4) {
+    position: absolute;
+    top: 15%;
+    transform: scale(0.9);
+    z-index: 1;
+  }
+}
